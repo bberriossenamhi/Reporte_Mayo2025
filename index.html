@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>REPORTE METEOROLÓGICO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+        .intro, .seccion {
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 50px;
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        .seccion h2 {
+            font-size: 26px;
+            margin-top: 30px;
+            color: #004488;
+        }
+        .grafico {
+            text-align: center;
+            margin-top: 25px;
+            overflow-x: auto;
+        }
+        .grafico img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 8px;
+            background-color: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>REPORTE METEOROLÓGICO</h1>
+
+    <div class="intro">
+        Durante mayo de 2025, la Región Arequipa presentó un comportamiento térmico anómalo, caracterizado por fuertes contrastes diarios, tanto en temperaturas máximas como mínimas. Se registraron valores extremos en varias zonas, así como múltiples episodios de olas de calor que afectaron a varios sectores. La clasificación térmica diaria muestra una alta frecuencia de días y noches fuera del rango climatológico normal, con implicancias directas para la gestión del riesgo, la agricultura, la salud y la planificación territorial. Los siguientes gráficos permiten visualizar de forma integrada la intensidad, duración y distribución de estos eventos térmicos en todo el territorio regional.
+    </div>
+
+    <div class="seccion">
+        <h2>Temperatura Máxima</h2>
+        <p>La Región Arequipa mostró una gran variación en las temperaturas máximas. En promedio, estas oscilaron entre 10.0 °C y 30.0 °C. Se identifica una zona central con temperaturas más bajas que el resto, rodeada por áreas con temperaturas más altas. Esta distribución refleja diferencias marcadas en el comportamiento térmico durante el mes, lo que puede influir en la agricultura, el consumo de agua y la salud.</p>
+        <div class="grafico">
+            <img src="plots/plot1.png" alt="Temperatura Máxima">
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Temperatura Mínima</h2>
+        <p>La Región Arequipa presentó temperaturas mínimas con un rango amplio, desde valores inferiores a -9 °C hasta cerca de 18 °C. Se destacan zonas con condiciones de frío intenso en el sector noreste, mientras que las temperaturas más altas se concentraron hacia el suroeste. Este comportamiento es clave para la evaluación de riesgo por heladas.</p>
+        <div class="grafico">
+            <img src="plots/plot2.png" alt="Temperatura Mínima">
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Clasificación de Temperatura Máxima</h2>
+        <p>La clasificación por percentiles muestra múltiples eventos de días muy cálidos y extremadamente cálidos, especialmente entre el 8 y el 15 de mayo. También se reportaron días fríos aunque en menor cantidad. Esto evidencia contrastes térmicos importantes a lo largo del mes.</p>
+        <div class="grafico">
+            <img src="plots/plot3.png" alt="Clasificación Temperatura Máxima">
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Clasificación de Temperatura Mínima</h2>
+        <p>Se observa una alta frecuencia de noches frías en la segunda mitad de mayo. En cambio, los primeros días del mes presentan algunas noches cálidas. Esta información es fundamental para el seguimiento de eventos de frío y su impacto en la agricultura.</p>
+        <div class="grafico">
+            <img src="plots/plot4.png" alt="Clasificación Temperatura Mínima">
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Olas de Calor</h2>
+        <p>Durante mayo se registraron varios episodios de olas de calor. Estos eventos fueron particularmente persistentes entre el 6 y el 14, y luego nuevamente entre el 16 y el 24. Las condiciones atmosféricas favorecieron la acumulación de calor, aumentando el riesgo en salud, agricultura e incendios forestales.</p>
+        <div class="grafico">
+            <img src="plots/plot5.png" alt="Olas de Calor">
+        </div>
+    </div>
+
+</body>
+</html>
