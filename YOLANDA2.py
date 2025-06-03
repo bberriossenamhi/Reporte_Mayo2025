@@ -7,8 +7,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Leer tus archivos Excel con datos para gráficos interactivos
-    df_max = pd.read_excel('./temperatura_maxima.xlsx')
-    df_min = pd.read_excel('./temperatura_minima.xlsx')
+    df_max = pd.read_excel('temperatura_maxima.xlsx')
+    df_min = pd.read_excel('temperatura_minima.xlsx')
 
     # Asegurar que las columnas sean: Estación, Temperatura
     df_max = df_max[['Estación', 'Temperatura']].sort_values(by='Temperatura', ascending=False)
